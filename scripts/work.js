@@ -112,9 +112,7 @@ const createSlideElement = (slideData) => {
     <div class="slide-description">
       <p>${slideData.description}</p>
       <div class="slide-info">
-        <p>Type. ${slideData.type}</p>
-        <p>Field. ${slideData.field}</p>
-        <p>Date. ${slideData.date}</p>
+        
       </div>
       <div class="slide-link">
         <a href="${slideData.route}">[ View Full Project ]</a>

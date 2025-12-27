@@ -2,7 +2,7 @@
 .film-hero {
   position: relative;
   width: 100%;
-  height: 100svh;
+  height: 100vh;
   background-color: var(--tone-200);
   overflow: hidden;
 }
@@ -18,9 +18,9 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-bottom: 4rem;
+  padding-bottom: 0rem;
   text-align: center;
-  color: var(--tone-400);
+  color: #fff;
 }
 
 .film-hero .container .film-hero-copy .pixelated-text h1 {
@@ -39,14 +39,24 @@
 /* film: banner section */
 .banner.film-banner {
   background-color: var(--tone-100);
+  height: 100vh;
 }
 
 .banner.film-banner .banner-content .container {
-  color: var(--tone-400);
+  color: #fff;
 }
 
 .banner.film-banner .banner-img img {
   opacity: 0.5;
+}
+
+.banner-tags a {
+  position: relative;
+  display: block;
+  color: #fff;
+  width: max-content;
+  padding: 0.2rem 0;
+  text-decoration: none;
 }
 
 /* film: snapshots section */
@@ -62,6 +72,7 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  
 }
 
 .film-snapshots .snap-row {
@@ -87,35 +98,108 @@
   opacity: 0;
 }
 
-.film-snapshots .img-1 .mask {
-  background: url(/sample-film/film-snapshot-1.jpg) no-repeat 50% 50%;
+.film-snapshots .img-fs-1 .mask {
+  background: url(https://res.cloudinary.com/dj0upsawo/image/upload/v1766669333/Cover6_pmcjf1.jpg) no-repeat 50% 50%;
   background-size: cover;
 }
 
-.film-snapshots .img-2 .mask {
-  background: url(/sample-film/film-snapshot-2.jpg) no-repeat 50% 50%;
+.film-snapshots .img-fs-2 .mask {
+  background: url(https://res.cloudinary.com/dj0upsawo/image/upload/v1766669380/303A2029_qu8n74.jpg) no-repeat 50% 50%;
   background-size: cover;
 }
 
-.film-snapshots .img-3 .mask {
-  background: url(/sample-film/film-snapshot-3.jpg) no-repeat 50% 50%;
+.film-snapshots .img-fs-3 .mask {
+  background: url(https://res.cloudinary.com/dj0upsawo/image/upload/v1766669383/303A1666_xvn0nt.jpg) no-repeat 50% 50%;
   background-size: cover;
 }
 
-.film-snapshots .img-4 .mask {
-  background: url(/sample-film/film-snapshot-4.jpg) no-repeat 50% 50%;
+.film-snapshots .img-fs-4 .mask {
+  background: url(https://res.cloudinary.com/dj0upsawo/image/upload/v1766669410/303A1750_k11zih.jpg) no-repeat 50% 50%;
   background-size: cover;
 }
 
-.film-snapshots .img-5 .mask {
-  background: url(/sample-film/film-snapshot-5.jpg) no-repeat 50% 50%;
+.film-snapshots .img-fs-5 .mask {
+  background: url(https://res.cloudinary.com/dj0upsawo/image/upload/v1766669420/303A1971_lzjhvm.jpg) no-repeat 50% 50%;
   background-size: cover;
 }
 
-.film-snapshots .img-6 .mask {
-  background: url(/sample-film/film-snapshot-6.jpg) no-repeat 50% 50%;
+.film-snapshots .img-fs-6 .mask {
+  background: url(https://res.cloudinary.com/dj0upsawo/image/upload/v1766669239/303A6333.jpg6_zkspxn.jpg) no-repeat 50% 50%;
   background-size: cover;
 }
+.film-snapshots .img-fs-7 .mask {
+  background: url(https://res.cloudinary.com/dj0upsawo/image/upload/v1766669221/303A6288_g6xvzo.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+.film-snapshots .img-fs-8 .mask {
+  background: url(https://res.cloudinary.com/dj0upsawo/image/upload/v1766669745/303A7288.._yf2nci.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+.film-snapshots .img-fs-9 .mask {
+  background: url(https://res.cloudinary.com/dj0upsawo/image/upload/v1766669861/Cover-Photo-2_dkrrgt.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+/* product images */
+.film-snapshots .img-pd-1 .mask {
+  background: url(https://res.cloudinary.com/dj0upsawo/image/upload/v1766675476/303A8068.jpgedited_wwpdsx.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+.film-snapshots .img-pd-2 .mask {
+  background: url(https://res.cloudinary.com/dj0upsawo/image/upload/v1766675466/303A2738_rig9dp.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+.film-snapshots .img-pd-3 .mask {
+  background: url(https://res.cloudinary.com/dj0upsawo/image/upload/v1766675455/303A2542.jpgedited_v56uom.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+.film-snapshots .img-pd-4 .mask {
+  background: url(https://res.cloudinary.com/dj0upsawo/image/upload/v1766675913/303A0468_tda6em.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+.film-snapshots .img-pd-5 .mask {
+  background: url(https://res.cloudinary.com/dj0upsawo/image/upload/v1766675516/303A0342_fu8gbs.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+.film-snapshots .img-pd-6 .mask {
+  background: url(https://res.cloudinary.com/dj0upsawo/image/upload/v1766675503/303A0300_quba9q.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+.film-snapshots .img-pd-7 .mask {
+  background: url(https://res.cloudinary.com/dj0upsawo/image/upload/v1766675936/303A0317_ccoy89.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+.film-snapshots .img-pd-8 .mask {
+  background: url(https://res.cloudinary.com/dj0upsawo/image/upload/v1766675950/303A0322_c2bak4.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+/* interior */
+.film-snapshots .img-int-1 .mask {
+  background: url(https://res.cloudinary.com/dj0upsawo/image/upload/v1766671285/DSC08295-HDR_mev8me.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+.film-snapshots .img-int-2 .mask {
+  background: url(https://res.cloudinary.com/dj0upsawo/image/upload/v1766671173/DSC08240-HDR_qppnny.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+.film-snapshots .img-int-3 .mask {
+  background: url(https://res.cloudinary.com/dj0upsawo/image/upload/v1766672922/IMG-20250520-WA0033_msy1dj.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+.film-snapshots .img-int-4 .mask {
+  background: url(https://res.cloudinary.com/dj0upsawo/image/upload/v1766672859/IMG-20250520-WA0026_kjq4cp.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+.film-snapshots .img-int-5 .mask {
+  background: url(https://res.cloudinary.com/dj0upsawo/image/upload/v1766672707/IMG-20250520-WA0012_pbrnfx.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+.film-snapshots .img-int-6 .mask {
+  background: url(https://res.cloudinary.com/dj0upsawo/image/upload/v1766672276/IMG-20250520-WA0009_pjl80z.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+
+
+
 
 @media (max-width: 1000px) {
   .film-hero .container .film-hero-copy .pixelated-text h1 {

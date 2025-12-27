@@ -1,42 +1,34 @@
 export const slides = [
   {
-    title: "Gilded Noise",
+    title: "Web Dev.",
     description:
-      "Heat, gold, and the sharp glint of teeth caught in a half-lit confession.",
-    type: "Still",
-    field: "Cinematic",
-    date: "2025",
+      "Design and development of websites with custom layouts, responsive performance, UI/UX optimization, and full lifecycle support — from strategy to launch and beyond.",
+
     image: "/work/work-1.jpg",
-    route: "/film",
+    route: "/web-dev",
   },
   {
-    title: "White Rush",
+    title: "Photography",
     description:
-      "Motion buried in snow. A body pressed against speed, swallowed by cold silence.",
-    type: "Sequence",
-    field: "Documentary",
-    date: "2023",
+      "Visual storytelling through still images —- capturing moments, products, interiors, events, and more to reflect brand personality and impact audiences",
+   
     image: "/work/work-2.jpg",
-    route: "/film",
+    route: "/photography",
   },
   {
-    title: "Copper Skin",
+    title: "Cinematography",
     description:
-      "Sweat, shadow, and the texture of closeness sculpted by unrelenting light.",
-    type: "Portrait",
-    field: "Experimental",
-    date: "2024",
+      "Professional video production including videography and video editing. The service emphasizes high-quality engagement, creative visuals, and storytelling tailored to the client’s objectives.",
+    
     image: "/work/work-3.jpg",
-    route: "/film",
+    route: "/cinematography",
   },
   {
-    title: "Static Youth",
+    title: "Graphic Design",
     description:
-      "Black and white glare. Two figures in defiance, gazes sharpened through the lens.",
-    type: "Editorial",
-    field: "Brutalist",
-    date: "2022",
+      "Creative graphics production — from visual assets and brand designs to marketing collaterals",
+    
     image: "/work/work-4.jpg",
-    route: "/film",
+    route: "/graphic-design",
   },
 ];

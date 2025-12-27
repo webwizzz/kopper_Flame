@@ -1,7 +1,7 @@
 {
-  "name": "negative-films",
+  "name": "Kopper-Flame",
   "version": "1.0.0",
-  "description": "Negative Films website built with GSAP, Lenis, Three.js, and Vite.",
+  "description": "Kopper Flame website built with GSAP, Lenis, Three.js, and Vite.",
   "main": "index.js",
   "scripts": {
     "postinstall": "node -e \"if (process.platform!=='win32'){require('child_process').execSync('chmod +x node_modules/.bin/*',{stdio:'inherit'})}\"",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/harrnish/negative-films.git"
+    "url": "git+https://github.com/harrnish/Kopper-Flame.git"
   },
   "keywords": [
     "vite",
@@ -25,9 +25,9 @@
   "author": "Worapon Jintajirakul",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/harrnish/negative-films/issues"
+    "url": "https://github.com/harrnish/Kopper-Flame/issues"
   },
-  "homepage": "https://github.com/harrnish/negative-films#readme",
+  "homepage": "https://github.com/harrnish/Kopper-Flame#readme",
   "engines": {
     "node": ">=18"
   },
