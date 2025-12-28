@@ -4,8 +4,16 @@
   "rewrites": [
     { "source": "/work", "destination": "/work.html" },
     { "source": "/culture", "destination": "/culture.html" },
-    { "source": "/directors", "destination": "/directors.html" },
     { "source": "/contact", "destination": "/contact.html" },
-    { "source": "/film", "destination": "/film.html" }
+    { "source": "/film", "destination": "/film.html" },
+    { "source": "/automobile", "destination": "/automobile.html" },
+    { "source": "/cinematography", "destination": "/cinematography.html" },
+    { "source": "/fashion", "destination": "/fashion.html" },
+    { "source": "/food", "destination": "/food.html" },
+    { "source": "/graphic-design", "destination": "/graphic-design.html" },
+    { "source": "/interiors", "destination": "/interiors.html" },
+    { "source": "/photography", "destination": "/photography.html" },
+    { "source": "/products", "destination": "/products.html" },
+    { "source": "/web-dev", "destination": "/web-dev.html" }
   ]
 }
