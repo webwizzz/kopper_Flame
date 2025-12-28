@@ -12,7 +12,7 @@ export const slides = [
     description:
       "Visual storytelling through still images —- capturing moments, products, interiors, events, and more to reflect brand personality and impact audiences",
    
-    image: "/work/work-2.jpg",
+    image: "/sample-film/photo-banner.jpg",
     route: "/photography",
   },
   {
@@ -20,7 +20,7 @@ export const slides = [
     description:
       "Professional video production including videography and video editing. The service emphasizes high-quality engagement, creative visuals, and storytelling tailored to the client’s objectives.",
     
-    image: "/work/work-3.jpg",
+    image: "/sample-film/cinema-banner.jpg",
     route: "/cinematography",
   },
   {

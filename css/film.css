@@ -197,7 +197,31 @@
   background: url(https://res.cloudinary.com/dj0upsawo/image/upload/v1766672276/IMG-20250520-WA0009_pjl80z.jpg) no-repeat 50% 50%;
   background-size: cover;
 }
-
+/* automobiles */
+.film-snapshots .img-aut-1 .mask {
+  background: url(https://res.cloudinary.com/dj0upsawo/image/upload/v1766669047/vccci_9_okjnh6.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+.film-snapshots .img-aut-2 .mask {
+  background: url(https://res.cloudinary.com/dj0upsawo/image/upload/v1766669044/vccci_8_chijm1.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+.film-snapshots .img-aut-3 .mask {
+  background: url(https://res.cloudinary.com/dj0upsawo/image/upload/v1766669042/vccci_7_re6kvr.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+.film-snapshots .img-aut-4 .mask {
+  background: url(https://res.cloudinary.com/dj0upsawo/image/upload/v1766669036/vccci_4_owoi9o.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+.film-snapshots .img-aut-5 .mask {
+  background: url(https://res.cloudinary.com/dj0upsawo/image/upload/v1766669034/vccci_13_ymmoou.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+.film-snapshots .img-aut-6 .mask {
+  background: url(https://res.cloudinary.com/dj0upsawo/image/upload/v1766669035/vccci_12_tb4kyf.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
 
 
 
