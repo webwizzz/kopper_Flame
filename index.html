@@ -9,6 +9,8 @@
     <meta name="author" content="Codegrid" />
 
     <!-- Resource Hints for Performance -->
+    <link rel="preconnect" href="https://res.cloudinary.com" crossorigin />
+    <link rel="preconnect" href="https://i.pinimg.com" crossorigin />
     <link rel="dns-prefetch" href="https://www.instagram.com" />
     <link rel="dns-prefetch" href="https://www.youtube.com" />
     <link rel="dns-prefetch" href="https://x.com" />
@@ -16,7 +18,7 @@
     
     <!-- Preload Critical Assets -->
     <link rel="preload" href="/globals.css" as="style" />
-    <link rel="preload" href="/hero/hero-footage.mp4" as="video" type="video/mp4" />
+    <link rel="preload" href="/hero/hero-poster.jpg" as="image" />
 
     <link rel="stylesheet" href="/globals.css" />
     <link rel="stylesheet" href="/css/preloader.css" />
@@ -54,15 +56,69 @@
 
     <div class="image-grid">
       <div class="grid-row">
-        <div class="img"><img src="https://i.pinimg.com/1200x/20/b1/55/20b155dd3d0d2f17ba10122d2ed1029b.jpg" alt="Spotlight image 1" /></div>
-        <div class="img"><img src="https://i.pinimg.com/1200x/20/b1/55/20b155dd3d0d2f17ba10122d2ed1029b.jpg" alt="Spotlight image 2" /></div>
-        <div class="img"><img src="https://i.pinimg.com/1200x/20/b1/55/20b155dd3d0d2f17ba10122d2ed1029b.jpg" alt="Spotlight image 3" /></div>
+        <div class="img"><img 
+          src="https://i.pinimg.com/474x/20/b1/55/20b155dd3d0d2f17ba10122d2ed1029b.jpg" 
+          srcset="https://i.pinimg.com/474x/20/b1/55/20b155dd3d0d2f17ba10122d2ed1029b.jpg 474w,
+                  https://i.pinimg.com/736x/20/b1/55/20b155dd3d0d2f17ba10122d2ed1029b.jpg 736w,
+                  https://i.pinimg.com/1200x/20/b1/55/20b155dd3d0d2f17ba10122d2ed1029b.jpg 1200w"
+          sizes="(max-width: 768px) 474px, (max-width: 1024px) 736px, 1200px"
+          alt="Spotlight image 1" 
+          loading="lazy" 
+          decoding="async" 
+          fetchpriority="low" /></div>
+        <div class="img"><img 
+          src="https://i.pinimg.com/474x/20/b1/55/20b155dd3d0d2f17ba10122d2ed1029b.jpg" 
+          srcset="https://i.pinimg.com/474x/20/b1/55/20b155dd3d0d2f17ba10122d2ed1029b.jpg 474w,
+                  https://i.pinimg.com/736x/20/b1/55/20b155dd3d0d2f17ba10122d2ed1029b.jpg 736w,
+                  https://i.pinimg.com/1200x/20/b1/55/20b155dd3d0d2f17ba10122d2ed1029b.jpg 1200w"
+          sizes="(max-width: 768px) 474px, (max-width: 1024px) 736px, 1200px"
+          alt="Spotlight image 2" 
+          loading="lazy" 
+          decoding="async" 
+          fetchpriority="low" /></div>
+        <div class="img"><img 
+          src="https://i.pinimg.com/474x/20/b1/55/20b155dd3d0d2f17ba10122d2ed1029b.jpg" 
+          srcset="https://i.pinimg.com/474x/20/b1/55/20b155dd3d0d2f17ba10122d2ed1029b.jpg 474w,
+                  https://i.pinimg.com/736x/20/b1/55/20b155dd3d0d2f17ba10122d2ed1029b.jpg 736w,
+                  https://i.pinimg.com/1200x/20/b1/55/20b155dd3d0d2f17ba10122d2ed1029b.jpg 1200w"
+          sizes="(max-width: 768px) 474px, (max-width: 1024px) 736px, 1200px"
+          alt="Spotlight image 3" 
+          loading="lazy" 
+          decoding="async" 
+          fetchpriority="low" /></div>
       </div>
 
       <div class="grid-row">
-        <div class="img"><img src="https://i.pinimg.com/1200x/20/b1/55/20b155dd3d0d2f17ba10122d2ed1029b.jpg" alt="Spotlight image 4" /></div>
-        <div class="img"><img src="https://i.pinimg.com/1200x/20/b1/55/20b155dd3d0d2f17ba10122d2ed1029b.jpg" alt="Spotlight image 5" /></div>
-        <div class="img"><img src="https://i.pinimg.com/1200x/20/b1/55/20b155dd3d0d2f17ba10122d2ed1029b.jpg" alt="Spotlight image 6" /></div>
+        <div class="img"><img 
+          src="https://i.pinimg.com/474x/20/b1/55/20b155dd3d0d2f17ba10122d2ed1029b.jpg" 
+          srcset="https://i.pinimg.com/474x/20/b1/55/20b155dd3d0d2f17ba10122d2ed1029b.jpg 474w,
+                  https://i.pinimg.com/736x/20/b1/55/20b155dd3d0d2f17ba10122d2ed1029b.jpg 736w,
+                  https://i.pinimg.com/1200x/20/b1/55/20b155dd3d0d2f17ba10122d2ed1029b.jpg 1200w"
+          sizes="(max-width: 768px) 474px, (max-width: 1024px) 736px, 1200px"
+          alt="Spotlight image 4" 
+          loading="lazy" 
+          decoding="async" 
+          fetchpriority="low" /></div>
+        <div class="img"><img 
+          src="https://i.pinimg.com/474x/20/b1/55/20b155dd3d0d2f17ba10122d2ed1029b.jpg" 
+          srcset="https://i.pinimg.com/474x/20/b1/55/20b155dd3d0d2f17ba10122d2ed1029b.jpg 474w,
+                  https://i.pinimg.com/736x/20/b1/55/20b155dd3d0d2f17ba10122d2ed1029b.jpg 736w,
+                  https://i.pinimg.com/1200x/20/b1/55/20b155dd3d0d2f17ba10122d2ed1029b.jpg 1200w"
+          sizes="(max-width: 768px) 474px, (max-width: 1024px) 736px, 1200px"
+          alt="Spotlight image 5" 
+          loading="lazy" 
+          decoding="async" 
+          fetchpriority="low" /></div>
+        <div class="img"><img 
+          src="https://i.pinimg.com/474x/20/b1/55/20b155dd3d0d2f17ba10122d2ed1029b.jpg" 
+          srcset="https://i.pinimg.com/474x/20/b1/55/20b155dd3d0d2f17ba10122d2ed1029b.jpg 474w,
+                  https://i.pinimg.com/736x/20/b1/55/20b155dd3d0d2f17ba10122d2ed1029b.jpg 736w,
+                  https://i.pinimg.com/1200x/20/b1/55/20b155dd3d0d2f17ba10122d2ed1029b.jpg 1200w"
+          sizes="(max-width: 768px) 474px, (max-width: 1024px) 736px, 1200px"
+          alt="Spotlight image 6" 
+          loading="lazy" 
+          decoding="async" 
+          fetchpriority="low" /></div>
       </div>
     </div>
 
@@ -124,7 +180,7 @@
 
     <!-- home: pixelated-video section -->
     <section class="hero">
-      <video class="hero-video" autoplay muted loop playsinline preload="metadata" poster="/hero/hero-poster.jpg">
+      <video class="hero-video" autoplay muted loop playsinline preload="auto" poster="/hero/hero-poster.jpg">
         <source src="/hero/hero-footage.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
@@ -182,7 +238,7 @@
     <!-- home: banner section -->
     <section class="banner">
       <div class="banner-img" data-parallax="true" data-parallax-speed="0.2">
-        <img src="/home/banner.jpg" alt="Kopper Flame Studio banner" loading="lazy" />
+        <img src="/home/banner.jpg" alt="Kopper Flame Studio banner" loading="lazy" decoding="async" fetchpriority="low" />
       </div>
 
       <div class="banner-content">
@@ -227,11 +283,11 @@
     <!-- home: split element section -->
     <section class="split-element">
       <div class="split-img split-top">
-        <img src="/home/form.svg" alt="Design form element" loading="lazy" />
+        <img src="/home/form.svg" alt="Design form element" loading="lazy" decoding="async" />
       </div>
 
       <div class="split-img split-bottom">
-        <img src="/home/form.svg" alt="Design form element" loading="lazy" />
+        <img src="/home/form.svg" alt="Design form element" loading="lazy" decoding="async" />
       </div>
 
       <div class="split-copy">
@@ -347,6 +403,7 @@
     </footer>
 
     <script src="/scripts/video-autoplay-fix.js"></script>
+    <script type="module" src="/scripts/lazy-load.js"></script>
     <script type="module" src="/scripts/lenis-scroll.js"></script>
     <script type="module" src="/scripts/preloader.js"></script>
     <script type="module" src="/scripts/transition.js"></script>
