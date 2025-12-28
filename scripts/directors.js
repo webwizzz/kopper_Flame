@@ -1,6 +1,6 @@
 import { scrambleVisible } from "./scramble.js";
 import gsap from "gsap";
-import { directors } from "../data/directors.js";
+import { Team } from "../data/directors.js";
 
 let isMobile = false;
 let eventListenersAttached = false;
@@ -10,13 +10,13 @@ function checkScreenSize() {
   isMobile = window.innerWidth < 1000;
 }
 
-function createDirectorsHTML() {
-  const directorsListContainer = document.querySelector(".directors-list");
-  if (!directorsListContainer) return;
+function createTeamHTML() {
+  const TeamListContainer = document.querySelector(".Team-list");
+  if (!TeamListContainer) return;
 
-  directorsListContainer.innerHTML = "";
+  TeamListContainer.innerHTML = "";
 
-  directors.forEach((director) => {
+  Team.forEach((director) => {
     const directorElement = document.createElement("div");
     directorElement.className = "director-item";
 
@@ -31,7 +31,7 @@ function createDirectorsHTML() {
       </a>
     `;
 
-    directorsListContainer.appendChild(directorElement);
+    TeamListContainer.appendChild(directorElement);
   });
 }
 
@@ -203,7 +203,7 @@ function onMouseLeave(item, activeItems) {
   }
 }
 
-function initDirectorScramble() {
+function initTeamcramble() {
   if (isMobile) {
     if (eventListenersAttached) {
       removeEventListeners();
@@ -236,14 +236,14 @@ function handleResize() {
 
   if ((wasDesktop && isNowMobile) || (!wasDesktop && !isNowMobile)) {
     applyResponsiveLayout();
-    initDirectorScramble();
+    initTeamcramble();
   }
 }
 
 function init() {
-  createDirectorsHTML();
+  createTeamHTML();
   applyResponsiveLayout();
-  initDirectorScramble();
+  initTeamcramble();
 }
 
 // main execution

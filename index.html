@@ -3,10 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kopper Flame | Codegrid | MWT Sept 2025</title>
+    <title>Kopper Flame | MWT Sept 2025</title>
     <link rel="icon" href="/site-icon.png" />
     <meta name="theme-color" content="#000000" />
     <meta name="author" content="Codegrid" />
+
+    <!-- Resource Hints for Performance -->
+    <link rel="dns-prefetch" href="https://www.instagram.com" />
+    <link rel="dns-prefetch" href="https://www.youtube.com" />
+    <link rel="dns-prefetch" href="https://x.com" />
+    <link rel="dns-prefetch" href="https://vimeo.com" />
+    
+    <!-- Preload Critical Assets -->
+    <link rel="preload" href="/globals.css" as="style" />
+    <link rel="preload" href="/hero/hero-footage.mp4" as="video" type="video/mp4" />
 
     <link rel="stylesheet" href="/globals.css" />
     <link rel="stylesheet" href="/css/preloader.css" />
@@ -32,6 +42,7 @@
       <div class="loader">
         <h1 class="logo-line-1">Kopper</h1>
         <h1 class="logo-line-2">Flame</h1>
+        <h2 class="logo-line-2">Studios</h2>
       </div>
 
       <div class="locations">
@@ -43,21 +54,15 @@
 
     <div class="image-grid">
       <div class="grid-row">
-        <div class="img"><img src="/spotlight/spotlight-1.jpg" alt="" /></div>
-        <div class="img"><img src="/spotlight/spotlight-2.jpg" alt="" /></div>
-        <div class="img"><img src="/spotlight/spotlight-3.jpg" alt="" /></div>
+        <div class="img"><img src="https://i.pinimg.com/1200x/20/b1/55/20b155dd3d0d2f17ba10122d2ed1029b.jpg" alt="Spotlight image 1" /></div>
+        <div class="img"><img src="https://i.pinimg.com/1200x/20/b1/55/20b155dd3d0d2f17ba10122d2ed1029b.jpg" alt="Spotlight image 2" /></div>
+        <div class="img"><img src="https://i.pinimg.com/1200x/20/b1/55/20b155dd3d0d2f17ba10122d2ed1029b.jpg" alt="Spotlight image 3" /></div>
       </div>
 
       <div class="grid-row">
-        <div class="img"><img src="/spotlight/spotlight-4.jpg" alt="" /></div>
-        <div class="img"><img src="/spotlight/spotlight-5.jpg" alt="" /></div>
-        <div class="img"><img src="/spotlight/spotlight-6.jpg" alt="" /></div>
-      </div>
-
-      <div class="grid-row">
-        <div class="img"><img src="/spotlight/spotlight-7.jpg" alt="" /></div>
-        <div class="img"><img src="/spotlight/spotlight-9.jpg" alt="" /></div>
-        <div class="img"><img src="/spotlight/spotlight-9.jpg" alt="" /></div>
+        <div class="img"><img src="https://i.pinimg.com/1200x/20/b1/55/20b155dd3d0d2f17ba10122d2ed1029b.jpg" alt="Spotlight image 4" /></div>
+        <div class="img"><img src="https://i.pinimg.com/1200x/20/b1/55/20b155dd3d0d2f17ba10122d2ed1029b.jpg" alt="Spotlight image 5" /></div>
+        <div class="img"><img src="https://i.pinimg.com/1200x/20/b1/55/20b155dd3d0d2f17ba10122d2ed1029b.jpg" alt="Spotlight image 6" /></div>
       </div>
     </div>
 
@@ -71,7 +76,7 @@
       <div class="container">
         <div class="logo">
           <div class="logo-container">
-            <a href="/"><span></span>Kopper</a>
+            <a href="/"><span></span>Kopper Flame Studio</a>
           </div>
         </div>
 
@@ -95,9 +100,6 @@
           <a href="/culture">Culture</a>
         </div>
         <div class="nav-item">
-          <a href="/directors">Directors</a>
-        </div>
-        <div class="nav-item">
           <a href="/contact">Contact</a>
         </div>
       </div>
@@ -105,10 +107,10 @@
       <div class="nav-footer">
         <div class="container">
           <div class="nav-footer-item">
-            <a href="https://www.instagram.com/codegridweb/" target="_blank"
+            <a href="https://www.instagram.com/the_kopper_flame" target="_blank"
               >Instagram</a
             >
-            <a href="https://www.youtube.com/@codegrid" target="_blank"
+            <a href="https://www.youtube.com/@kopperflamestudio" target="_blank"
               >YouTube</a
             >
           </div>
@@ -122,20 +124,21 @@
 
     <!-- home: pixelated-video section -->
     <section class="hero">
-      <video class="hero-video" autoplay muted loop playsinline>
+      <video class="hero-video" autoplay muted loop playsinline preload="metadata" poster="/hero/hero-poster.jpg">
         <source src="/hero/hero-footage.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
       </video>
 
       <div class="hero-content">
         <div class="hero-header">
-          <div class="container">
-            <h2>Flame forged on shadow, silence and geometry.</h2>
-          </div>
+          <!-- <div class="container">
+            <h2>Building Brands, Elevating Presence.</h2>
+          </div> -->
         </div>
 
         <div class="hero-footer">
           <div class="container">
-            <p><span>Warsaw</span> <span>/</span> <span>Marseille</span></p>
+            <p><span>Creative</span> <span>&</span> <span>Reliable Branding Solutions</span></p>
             <p>[ &nbsp;Scroll to Continue&nbsp; ]</p>
           </div>
         </div>
@@ -146,45 +149,31 @@
     <section class="about-callout">
       <div class="container">
         <div class="about-callout-copy">
-          <p>We Shoot. We fracture. We reform.</p>
-          <p>We are Kopper.</p>
+          <p>We Bring Ideas to Life!</p>
+          <p>Welcome to Kopper Flame Studio.</p>
         </div>
       </div>
     </section>
 
     <!-- home: pixelated-text section -->
     <section class="pixelated-text about-header">
-      <h1>Cold as Concrete</h1>
+      <h1>Our Story</h1>
     </section>
 
     <!-- home: about copy section -->
     <section class="about-copy">
       <div class="container">
         <h3>
-          We approach cinema as a construction of form and weight. Each frame is
-          laid like concrete, measured and precise.
+          From concept to execution, we craft stunning visuals, dynamic websites, and engaging social media content.
         </h3>
 
         <div class="about-copy-info">
           <p>
-            Our work begins with the recognition that film is not an escape but
-            a construction. We treat every image as material. Light, shadow, and
-            silence are not backdrops, they are the raw elements we use to
-            build. Each project is assembled like a structure, every frame
-            placed with weight, every cut measured against the whole. We are not
-            interested in surface, in ornament, in polish that fades. What we
-            pursue is durability. What we pursue is form that endures long after
-            the screen has gone dark. We believe that cinema should resist
-            convenience. It should not bend itself to easy consumption or quick
-            comfort. A film should hold its ground. It should demand attention,
-            not chase it. Our practice is shaped by this discipline. We fracture
-            images, we strip away excess, we confront the audience with only
-            what is necessary. The result is work that is sharp, deliberate, and
-            unflinching. This is not entertainment in the common sense.
+            We make your brand stand out. Whether you need a sleek logo, a high-performing website, eye-catching graphics, or immersive 3D visuals, we've got you covered. We shape and manage your brand identity through strategy, tone, and consistency, building strong connections across every digital and social platform. Our team drives engagement and growth through targeted campaigns, content strategy, and performance marketing. We craft powerful visuals through video, design, and motion, transforming raw ideas into branded content that engages, inspires, and elevates your message. We design and develop user-centric websites that are fast, scalable, and optimized, crafted to reflect your brand and deliver seamless digital performance.
           </p>
 
           <a href="/culture" class="scramble-hover"
-            >[ &nbsp;Explore Our Ethos&nbsp; ]</a
+            >[ &nbsp;Know More About Us&nbsp; ]</a
           >
         </div>
       </div>
@@ -193,30 +182,26 @@
     <!-- home: banner section -->
     <section class="banner">
       <div class="banner-img" data-parallax="true" data-parallax-speed="0.2">
-        <img src="/home/banner.jpg" alt="" />
+        <img src="/home/banner.jpg" alt="Kopper Flame Studio banner" loading="lazy" />
       </div>
 
       <div class="banner-content">
         <div class="container">
           <div class="banner-header">
-            <h2>We do not chase beauty. We build function.</h2>
+            <h2>Creating Ideas With Limitless Possibilities</h2>
           </div>
 
           <div class="banner-tags">
-            <p>Film Archive</p>
-            <p>Documentation</p>
-            <p>Still Frames</p>
-            <p>Research</p>
-            <p>Preservation</p>
+            <p>Brand Management</p>
+            <p>Social Media</p>
+            <p>Creative Production</p>
+            <p>Web Development</p>
+            <p>3D Services</p>
           </div>
 
           <div class="banner-copy">
             <p>
-              Film is not only vision, it is work. We set lights until the
-              shadows fall in the right place. We cut until rhythm appears. We
-              test, we rebuild, we repeat. The camera is a tool, but so is the
-              hand that holds it and the time spent waiting for a single detail
-              to align. This is the practice that shapes what you see.
+              At Kopper Flame Studio, we offer more than just creative services; we provide a dynamic, ready-to-execute approach tailored for brands and creators of all kinds. Our fully equipped team includes professional designers, developers, and content strategists that adapt to your project needs. Whether it's a commercial campaign, a digital transformation, or branded content, working with us means having the tools and expertise to work without limits. No distractions, just pure creativity.
             </p>
           </div>
         </div>
@@ -224,39 +209,39 @@
     </section>
 
     <!-- home: spotlight section -->
-    <section class="spotlight">
+    <!-- <section class="spotlight">
       <div class="spotlight-container">
         <div class="spotlight-gallery"></div>
       </div>
 
       <div class="spotlight-footer">
         <div class="container">
-          <p>Selected Frames</p>
+          <p>Featured Projects</p>
           <a href="/work" class="scramble-hover"
-            >[ &nbsp;Expand Catalogue&nbsp; ]</a
+            >[ &nbsp;View All Work&nbsp; ]</a
           >
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- home: split element section -->
     <section class="split-element">
       <div class="split-img split-top">
-        <img src="/home/form.svg" alt="" />
+        <img src="/home/form.svg" alt="Design form element" loading="lazy" />
       </div>
 
       <div class="split-img split-bottom">
-        <img src="/home/form.svg" alt="" />
+        <img src="/home/form.svg" alt="Design form element" loading="lazy" />
       </div>
 
       <div class="split-copy">
         <div class="container">
           <p>
-            <span>Disruption</span>
-            <span>Discipline</span>
-            <span>Mechanics</span>
-            <span>Sequence</span>
-            <span>Construct</span>
+            <span>Brand Identity</span>
+            <span>Digital Strategy</span>
+            <span>Visual Design</span>
+            <span>Content Creation</span>
+            <span>Performance</span>
           </p>
         </div>
       </div>
@@ -266,23 +251,23 @@
     <section class="clients">
       <div class="container">
         <div class="clients-header">
-          <p>[ &nbsp;Selected Collaborations&nbsp; ]</p>
-          <h3>Allies in Creation</h3>
+          <p>[ &nbsp;Trusted Partners&nbsp; ]</p>
+          <h3>We Treat Every Client Like Family</h3>
         </div>
 
         <div class="grid">
           <div class="grid-row">
-            <div class="grid-item"><p>Blackline Studio</p></div>
-            <div class="grid-item"><p>North Axis</p></div>
-            <div class="grid-item"><p>Vanta Works</p></div>
+            <div class="grid-item"><p>Tech Innovators</p></div>
+            <div class="grid-item"><p>Fashion Brands</p></div>
+            <div class="grid-item"><p>Startups</p></div>
           </div>
 
           <div class="grid-row">
-            <div class="grid-item"><p>Oblique Flame</p></div>
-            <div class="grid-item"><p>Hollow Syndicate</p></div>
-            <div class="grid-item"><p>Ferrotype</p></div>
-            <div class="grid-item"><p>Glasshaus</p></div>
-            <div class="grid-item"><p>Orbit Division</p></div>
+            <div class="grid-item"><p>E-commerce</p></div>
+            <div class="grid-item"><p>Hospitality</p></div>
+            <div class="grid-item"><p>Entertainment</p></div>
+            <div class="grid-item"><p>Real Estate</p></div>
+            <div class="grid-item"><p>Non-Profits</p></div>
           </div>
         </div>
 
@@ -297,10 +282,11 @@
           <div class="footer-name">
             <h3>Kopper</h3>
             <h3>Flame</h3>
+            <h3>Studio</h3>
           </div>
 
           <div class="footer-form-copy">
-            <p>A living record of projects, people, and process.</p>
+            <p>Let's connect and bring your vision to life.</p>
           </div>
 
           <div class="footer-input">
@@ -309,7 +295,7 @@
 
           <div class="footer-submit-btn">
             <a href="/contact" class="scramble-hover"
-              >[ &nbsp;Start Exchange&nbsp; ]</a
+              >[ &nbsp;Get A Quote&nbsp; ]</a
             >
           </div>
         </div>
@@ -319,40 +305,33 @@
         <div class="container">
           <div class="footer-meta-row">
             <div class="meta-info">
-              <p>Get in touch</p>
-              <p>inquiry@KopperFlame.com</p>
+              <p>Talk to Us, We're Listening</p>
+              <p>info@kopperflamestudio.com</p>
             </div>
 
             <div class="meta-info">
               <a
-                href="https://www.youtube.com/@codegrid"
+                href="https://www.youtube.com/@kopperflamestudio"
                 target="_blank"
                 class="scramble-hover"
                 >YouTube</a
               >
               <a
-                href="https://www.instagram.com/codegridweb/"
+                href="https://www.instagram.com/the_kopper_flame"
                 target="_blank"
                 class="scramble-hover"
                 >Instagram</a
               >
               <a
-                href="https://x.com/codegridweb"
+                href="https://www.linkedin.com/"
                 target="_blank"
                 class="scramble-hover"
-                >Twitter</a
-              >
-              <a
-                href="https://vimeo.com/codegrid"
-                target="_blank"
-                class="scramble-hover"
-                >Vimeo</a
+                >LinkedIn</a
               >
             </div>
 
             <div class="meta-info">
               <a href="/culture" class="scramble-hover">Culture</a>
-              <a href="/work" class="scramble-hover">Directors</a>
             </div>
 
             <div class="meta-info">
@@ -361,13 +340,13 @@
           </div>
 
           <div class="footer-meta-row">
-            <p>Developed by Codegrid</p>
             <p>All Rights Reserved</p>
           </div>
         </div>
       </div>
     </footer>
 
+    <script src="/scripts/video-autoplay-fix.js"></script>
     <script type="module" src="/scripts/lenis-scroll.js"></script>
     <script type="module" src="/scripts/preloader.js"></script>
     <script type="module" src="/scripts/transition.js"></script>
