@@ -85,7 +85,8 @@
 .clients {
   position: relative;
   width: 100%;
-  height: 100svh;
+  min-height: 100svh;
+  padding: 4rem 0;
   background-color: var(--tone-100);
   color: var(--tone-500);
   overflow: hidden;
@@ -116,7 +117,6 @@
 .clients .grid {
   position: relative;
   width: 90%;
-  height: 60%;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -129,10 +129,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  min-height: 120px;
 }
 
-.clients .grid-row:nth-child(1) {
+.clients .grid-row:not(:last-child) {
   border-bottom: 1px solid var(--tone-200);
 }
 
@@ -147,15 +147,32 @@
   user-select: none;
 }
 
+.clients .grid-item img {
+  position: relative;
+  z-index: 2;
+  max-width: 80%;
+  max-height: 80px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  filter: grayscale(100%) brightness(0.8);
+  transition: filter 0.3s ease;
+}
+
+.clients .grid-item:hover img {
+  filter: grayscale(0%) brightness(1);
+}
+
 .clients .highlight {
   position: absolute;
   top: 0;
   left: 0;
-  background: white;
+  background: rgba(255, 255, 255, 0.05);
   opacity: 1;
   transition: transform 0.25s ease, width 0.25s ease, height 0.25s ease,
     background-color 0.25s ease;
   pointer-events: none;
+  z-index: 1;
 }
 
 @media (max-width: 1000px) {
@@ -184,36 +201,50 @@
   }
 
   .clients {
-    height: 110svh;
+    min-height: auto;
+    padding: 3rem 0;
+  }
+
+  .clients .clients-header h3 {
+    font-size: 1.5rem;
+    text-align: center;
   }
 
   .clients .grid {
-    height: max-content;
+    width: 95%;
     border: 1px solid var(--tone-400);
   }
 
   .clients .grid-row {
-    flex: none;
-    flex-direction: column;
-    gap: 0;
-    height: max-content;
-    padding: 0;
-    border: none;
+    flex-wrap: wrap;
+    border-bottom: none;
   }
 
-  .clients .grid-row:nth-child(1) {
-    border-bottom: 1px solid var(--tone-400);
+  .clients .grid-row:not(:last-child) {
+    border-bottom: none;
   }
 
   .clients .grid-item {
-    flex: none;
-    width: 100%;
-    height: 4rem;
-    padding: 0;
+    flex: 0 0 50%;
+    min-height: 100px;
+    padding: 1rem;
+    border-bottom: 1px solid var(--tone-200);
   }
 
-  .clients .grid-item:not(:last-child) {
+  .clients .grid-item:nth-child(odd) {
+    border-right: 1px solid var(--tone-200);
+  }
+
+  .clients .grid-item:nth-child(even) {
     border-right: none;
-    border-bottom: 1px solid var(--tone-400);
+  }
+
+  .clients .grid-row:last-child .grid-item:nth-last-child(-n+2) {
+    border-bottom: none;
+  }
+
+  .clients .grid-item img {
+    max-width: 90%;
+    max-height: 60px;
   }
 }
