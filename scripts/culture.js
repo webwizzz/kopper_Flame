@@ -12,10 +12,7 @@ const gridLayout = [
   [null, 5, 6, null],
   [7, null, null, 8],
   [null, null, 9, null],
-  [null, 10, null, 11],
-  [12, null, 13, null],
-  [null, 14, null, null],
-  [15, null, null, 16],
+  [null, 10, null, null],
 ];
 
 const origins = [
@@ -61,7 +58,7 @@ function createTeamGrid() {
         teamImg.setAttribute("data-origin", origins[imageIndex]);
 
         const img = document.createElement("img");
-        img.src = `/culture/team/team-${imageIndex + 1}.jpg`;
+        img.src = `/directors/director-${imageIndex + 1}.png`;
         img.alt = "";
 
         teamImg.appendChild(img);

@@ -8,7 +8,7 @@ export default defineConfig({
         main: resolve(__dirname, "index.html"),
         work: resolve(__dirname, "work.html"),
         culture: resolve(__dirname, "culture.html"),
-        directors: resolve(__dirname, "directors.html"),
+        Team: resolve(__dirname, "Team.html"),
         contact: resolve(__dirname, "contact.html"),
         film: resolve(__dirname, "film.html"),
       },

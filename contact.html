@@ -8,6 +8,15 @@
     <meta name="theme-color" content="#000000" />
     <meta name="author" content="Codegrid" />
 
+    <!-- Resource Hints for Performance -->
+    <link rel="dns-prefetch" href="https://www.instagram.com" />
+    <link rel="dns-prefetch" href="https://www.youtube.com" />
+    <link rel="dns-prefetch" href="https://vimeo.com" />
+    <link rel="dns-prefetch" href="https://www.linkedin.com" />
+    
+    <!-- Preload Critical Assets -->
+    <link rel="preload" href="/globals.css" as="style" />
+
     <link rel="stylesheet" href="/globals.css" />
     <link rel="stylesheet" href="/css/transition.css" />
     <link rel="stylesheet" href="/css/menu.css" />
@@ -25,7 +34,7 @@
       <div class="container">
         <div class="logo">
           <div class="logo-container">
-            <a href="/"><span></span>Kopper</a>
+            <a href="/"><span></span>Kopper Flame Studio</a>
           </div>
         </div>
 
@@ -48,9 +57,6 @@
         <div class="nav-item">
           <a href="/culture">Culture</a>
         </div>
-        <div class="nav-item">
-          <a href="/directors">Directors</a>
-        </div>
         <div class="nav-item active">
           <a href="/contact">Contact</a>
         </div>
@@ -59,10 +65,10 @@
       <div class="nav-footer">
         <div class="container">
           <div class="nav-footer-item">
-            <a href="https://www.instagram.com/codegridweb/" target="_blank"
+            <a href="https://www.instagram.com/the_kopper_flame" target="_blank"
               >Instagram</a
             >
-            <a href="https://www.youtube.com/@codegrid" target="_blank"
+            <a href="https://www.youtube.com/@kopperflamestudio" target="_blank"
               >YouTube</a
             >
           </div>
@@ -76,37 +82,38 @@
 
     <!-- contact: hero section -->
     <section class="hero contact-page">
-      <video class="hero-video" autoplay muted loop playsinline>
-        <source src="/contact/contact-hero.mp4" type="video/mp4" />
+      <video class="hero-video" autoplay muted loop playsinline preload="metadata">
+        <source src="/hero/hero-footage.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
       </video>
 
       <div class="contact-copy">
         <div class="contact-copy-main">
           <div class="contact-col-copy">
-            <h4 class="contact-header">Kopper Flame</h4>
-            <h4>Warsaw / Marseille</h4>
-            <h4>Block C, Foundry Street</h4>
-            <h4>48.8566 / 2.3522</h4>
-            <h4>FR-204X</h4>
+            <h4 class="contact-header">Kopper Flame Studio</h4>
+            <h4>500 Terry Francine St</h4>
+            <h4>San Francisco, CA 94158</h4>
+            <h4>Monday - Friday: 7AM - 5PM</h4>
           </div>
 
           <div class="contact-col-copy">
-            <h4>Drop a line</h4>
-            <h4>Inquiry@Kopper.com</h4>
-            <h4>Instagram / Vimeo / LinkedIn</h4>
-            <h4>+(33) 714 202 4410</h4>
+            <h4>Let's Create Together</h4>
+            <h4>info@kopperflamestudio.com</h4>
+            <h4>Instagram / YouTube / LinkedIn</h4>
+            <h4>+(1) 123-456-7890</h4>
           </div>
         </div>
 
         <div class="contact-copy-footer">
           <div class="container">
-            <p>Developed by Codegrid</p>
-            <p>&copy; 2025 Kopper Flame</p>
+            <p>Get In Touch With Us</p>
+            <p>&copy; 2025 Kopper Flame Studio</p>
           </div>
         </div>
       </div>
     </section>
 
+    <script src="/scripts/video-autoplay-fix.js"></script>
     <script type="module" src="/scripts/lenis-scroll.js"></script>
     <script type="module" src="/scripts/transition.js"></script>
     <script type="module" src="/scripts/menu.js"></script>
