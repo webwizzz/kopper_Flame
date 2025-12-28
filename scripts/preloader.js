@@ -5,94 +5,94 @@ import { lenis } from "./lenis-scroll.js";
 gsap.registerPlugin(CustomEase);
 CustomEase.create("hop", "0.9, 0, 0.1, 1");
 
-// project data array
+// project data array - Kopper Flame Studio projects
 const projectsData = [
   {
-    name: "Lunar Eclipse",
-    director: "Amelia Crawford",
-    location: "Toronto, ON",
+    name: "TMDS",
+    director: "Brand Designing",
+    location: "2024",
   },
   {
-    name: "Visitor Quarters",
-    director: "Marcus Reynolds",
-    location: "Vancouver Studio, BC",
+    name: "ESID",
+    director: "Brand Designing",
+    location: "2024",
   },
   {
-    name: "Celestial",
-    director: "Nina Liu // Weston",
-    location: "Austin, TX",
+    name: "Kavira Jewellery",
+    director: "Brand Designing",
+    location: "2024",
   },
   {
-    name: "Streamwave Original",
-    director: "Dylan Pierce",
-    location: "Sunset Studios - Miami",
+    name: "Social Campaign",
+    director: "Social Media",
+    location: "2024",
   },
   {
-    name: "Viewfinder",
-    director: "Javier // Rodriguez",
-    location: "BLANK Studios - Chicago",
+    name: "Product Visualization",
+    director: "3D Services",
+    location: "2024",
   },
   {
-    name: "Rhythm Collective",
-    director: "Sophia // Chen",
-    location: "London, UK",
+    name: "Corporate Film",
+    director: "Cinematography",
+    location: "2024",
   },
   {
-    name: "Urban Odyssey",
-    director: "Leo Thompson",
-    location: "Pioneer Studios - Seattle",
+    name: "Brand Photography",
+    director: "Photography",
+    location: "2023",
   },
   {
-    name: "Prism No. 1",
-    director: "Taylor // McKnight",
-    location: "Private Estate - Sedona",
+    name: "Web Platform",
+    director: "Web Development",
+    location: "2024",
   },
   {
-    name: "Vision Quest",
-    director: "Spencer // Hudson",
-    location: "Elevation - Denver",
+    name: "Visual Identity",
+    director: "Graphic Designing",
+    location: "2024",
   },
   {
-    name: "Wavelength",
-    director: "Kai Nakamura",
-    location: "San Francisco, CA",
+    name: "Content Creation",
+    director: "Social Media",
+    location: "2023",
   },
   {
-    name: "Desert Horizon",
-    director: "Olivia",
-    location: "New Mexico",
+    name: "Motion Graphics",
+    director: "Cinematography",
+    location: "2024",
   },
   {
-    name: "Spectrum",
-    director: "Ellis // Moss",
-    location: "Harmony Studio - Montreal",
+    name: "Packaging Design",
+    director: "Graphic Designing",
+    location: "2023",
   },
   {
-    name: "Vision Quest II",
-    director: "Hudson // Wright",
-    location: "Elevation Studios - Denver",
+    name: "E-commerce Site",
+    director: "Web Development",
+    location: "2024",
   },
   {
-    name: "Auteur",
-    director: "Leo Thompson",
-    location: "Berlin, DE",
+    name: "Fashion Campaign",
+    director: "Photography",
+    location: "2023",
   },
   {
-    name: "Capsule X Design",
-    director: "Sophia // Chen",
-    location: "Neon House - Brooklyn",
+    name: "3D Animation",
+    director: "3D Services",
+    location: "2024",
   },
   {
-    name: "Pulse",
-    director: "Callum // Winters",
-    location: "Echo Pavilion - Portland",
+    name: "Brand Strategy",
+    director: "Creative Production",
+    location: "2024",
   },
 ];
 
 // image sources for rotation
 const allImageSources = Array.from(
   { length: 20 },
-  (_, i) => `/spotlight/spotlight-${i + 1}.jpg`
+  (_, i) => `/logo/logo-${i + 1}.png`
 );
 
 // utility functions
@@ -161,26 +161,26 @@ function startImageRotation() {
 
 // cleanup preloader elements and re-enable scrolling
 function cleanupPreloader() {
-  const overlay = document.querySelector(".overlay");
-  const imageGrid = document.querySelector(".image-grid");
+    const overlay = document.querySelector(".overlay");
+    const imageGrid = document.querySelector(".image-grid");
 
-  if (overlay) overlay.remove();
-  if (imageGrid) imageGrid.remove();
+    if (overlay) overlay.remove();
+    if (imageGrid) imageGrid.remove();
 
-  gsap.killTweensOf([
-    ".overlay",
-    ".image-grid",
-    ".projects",
-    ".locations",
-    ".loader",
-    ".project-item",
-    ".location-item",
-    ".projects-header",
-    ".locations-header",
-    ".logo-line-1",
-    ".logo-line-2",
-    ".img",
-  ]);
+    gsap.killTweensOf([
+      ".overlay",
+      ".image-grid",
+      ".projects",
+      ".locations",
+      ".loader",
+      ".project-item",
+      ".location-item",
+      ".projects-header",
+      ".locations-header",
+      ".logo-line-1",
+      ".logo-line-2",
+      ".img",
+    ]);
 
   if (lenis) {
     lenis.start();
@@ -295,7 +295,7 @@ function createAnimationTimelines() {
     onComplete: () => {
       sessionStorage.setItem("preloaderSeen", "true");
       setTimeout(() => {
-        cleanupPreloader();
+      cleanupPreloader();
       }, 500);
     },
   });
@@ -318,7 +318,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (overlay) overlay.style.display = "none";
     if (imageGrid) imageGrid.style.display = "none";
-
+    
     if (lenis) {
       lenis.start();
     }
@@ -332,4 +332,13 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   init();
+  
+  // Fallback timeout to prevent infinite loading (10 seconds)
+  setTimeout(() => {
+    if (sessionStorage.getItem("preloaderSeen") !== "true") {
+      console.warn("Preloader timeout - forcing cleanup");
+      sessionStorage.setItem("preloaderSeen", "true");
+      cleanupPreloader();
+    }
+  }, 10000);
 });
