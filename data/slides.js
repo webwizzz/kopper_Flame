@@ -4,7 +4,7 @@ export const slides = [
     description:
       "Design and development of websites with custom layouts, responsive performance, UI/UX optimization, and full lifecycle support — from strategy to launch and beyond.",
 
-    image: "/work/work-1.jpg",
+    image: "https://res.cloudinary.com/dj0upsawo/image/upload/w_auto,q_auto,f_auto,c_limit/v1766962178/ciqsujphzpwapahmpvul.jpg",
     route: "/web-dev",
   },
   {
@@ -28,7 +28,7 @@ export const slides = [
     description:
       "Creative graphics production — from visual assets and brand designs to marketing collaterals",
     
-    image: "/work/work-4.jpg",
+    image: "https://res.cloudinary.com/dj0upsawo/image/upload/w_auto,q_auto,f_auto,c_limit/v1766962115/top-view-desk-with-keyboard-drawing-pad_g31tfv.jpg",
     route: "/graphic-design",
   },
 ];

@@ -222,21 +222,21 @@
   background: url(https://res.cloudinary.com/dj0upsawo/image/upload/w_800,q_auto:low,f_auto,c_limit/v1766669035/vccci_12_tb4kyf.jpg) no-repeat 50% 50%;
   background-size: cover;
 }
-/* cimema */
+/* cimema - using video thumbnails (so_0 = first frame, f_jpg for static image) */
 .film-snapshots .img-cin-1 .mask {
-  background: url(https://res.cloudinary.com/dj0upsawo/video/upload/w_800,q_auto:low,f_auto,c_limit/v1766915114/LONGINES_AD-2_ckis9d.mov) no-repeat 50% 50%;
+  background: url(https://res.cloudinary.com/dj0upsawo/video/upload/w_800,q_auto,f_jpg,so_0,c_limit/v1766915114/LONGINES_AD-2_ckis9d.mov) no-repeat 50% 50%;
   background-size: cover;
 }
 .film-snapshots .img-cin-2 .mask {
-  background: url(https://res.cloudinary.com/dj0upsawo/video/upload/w_800,q_auto:low,f_auto,c_limit/v1766910098/20220410-201842-952_vy3xfs.mov) no-repeat 50% 50%;
+  background: url(https://res.cloudinary.com/dj0upsawo/video/upload/w_800,q_auto,f_jpg,so_0,c_limit/v1766910098/20220410-201842-952_vy3xfs.mov) no-repeat 50% 50%;
   background-size: cover;
 }
 .film-snapshots .img-cin-3 .mask {
-  background: url(https://res.cloudinary.com/dj0upsawo/video/upload/w_800,q_auto:low,f_auto,c_limit/v1766957196/car_website_moj8aj.mov) no-repeat 50% 50%;
+  background: url(https://res.cloudinary.com/dj0upsawo/video/upload/w_800,q_auto,f_jpg,so_0,c_limit/v1766957196/car_website_moj8aj.mov) no-repeat 50% 50%;
   background-size: cover;
 }
 .film-snapshots .img-cin-4 .mask {
-  background: url(https://res.cloudinary.com/dj0upsawo/video/upload/w_800,q_auto:low,f_auto,c_limit/v1766957151/TARANGAN_FEST_22-23-2_pahibf.mp4) no-repeat 50% 50%;
+  background: url(https://res.cloudinary.com/dj0upsawo/video/upload/w_800,q_auto,f_jpg,so_0,c_limit/v1766957151/TARANGAN_FEST_22-23-2_pahibf.mp4) no-repeat 50% 50%;
   background-size: cover;
 }
 
