@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cinematography | Kopper Flame</title>
+    <title>3D | Kopper Flame Studio</title>
     <link rel="icon" href="/site-icon.png" />
     <meta name="theme-color" content="#000000" />
     <meta name="author" content="Jatin&Swati" />
@@ -79,15 +79,15 @@
         <div class="film-hero-copy">
           <div class="film-hero-title">
             <div class="pixelated-text">
-              <h1>Cinematography</h1>
+              <h1>3D</h1>
             </div>
           </div>
           <div class="film-hero-description">
             <p>
-              Professional video production including videography and video
-              editing. High-quality engagement, creative visuals, and
-              storytelling tailored to the client's objectives. Motion that
-              moves audiences.
+              Immersive 3D visualization and modeling — from product renders and
+              architectural walkthroughs to animations and virtual experiences
+              that bring ideas to life. We craft digital dimensions that captivate
+              and inspire.
             </p>
 
             <p>[ &nbsp;Continue Inside&nbsp; ]</p>
@@ -99,106 +99,53 @@
     <!-- film: banner section -->
     <section class="banner film-banner">
       <div class="banner-img" data-parallax="true" data-parallax-speed="0.2">
-        <img src="/sample-film/cinema-banner.jpg" alt="" />
+        <img src="https://res.cloudinary.com/dj0upsawo/image/upload/w_auto,q_auto,f_auto,c_limit/v1766962111/3d-rendering-abstract-black-white_xtmpeq.jpg" alt="" />
       </div>
 
       <div class="banner-content">
         <div class="container">
           <div class="banner-header">
-            <h2>Directed by</h2>
-            <h2>Our Vision</h2>
+            <h2>Rendered by</h2>
+            <h2>Imagination</h2>
           </div>
-
-          
 
           <div class="banner-copy">
             <p>
-              Cinematography is the language of motion and emotion. From concept
-              to final cut, we craft video content that captivates, engages, and
-              drives action. Our approach combines technical excellence with
-              creative storytelling to deliver content that resonates.
+              3D design transcends the boundaries of traditional media. From
+              photorealistic product visualizations to immersive architectural
+              experiences, we create digital worlds that showcase your vision
+              with stunning detail and precision. Every polygon tells a story.
             </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- film: video gallery section -->
-    <section class="film-snapshots cinema-videos">
+    <!-- film: snapshots section -->
+    <section class="film-snapshots">
       <div class="container">
         <div class="snap-row">
-          <div class="snap-img video-item">
-            <video autoplay muted loop playsinline preload="auto">
-              <source src="https://res.cloudinary.com/dj0upsawo/video/upload/q_auto,w_800/v1766957196/car_website_moj8aj.mp4" type="video/mp4" />
-            </video>
-          </div>
-          <div class="snap-img video-item">
-            <video autoplay muted loop playsinline preload="auto">
-              <source src="https://res.cloudinary.com/dj0upsawo/video/upload/q_auto,w_800/v1766910098/20220410-201842-952_vy3xfs.mp4" type="video/mp4" />
-            </video>
-          </div>
-          <div class="snap-img video-item">
-            <video autoplay muted loop playsinline preload="auto">
-              <source src="https://res.cloudinary.com/dj0upsawo/video/upload/q_auto,w_800/v1766915114/LONGINES_AD-2_ckis9d.mp4" type="video/mp4" />
-            </video>
-          </div>
+          <div class="snap-img img-3d-1"></div>
+          <div class="snap-img img-3d-2"></div>
+          <div class="snap-img"></div>
         </div>
 
         <div class="snap-row">
-          <div class="snap-img video-item">
-            <video autoplay muted loop playsinline preload="auto">
-              <source src="https://res.cloudinary.com/dj0upsawo/video/upload/q_auto,w_800/v1766957151/TARANGAN_FEST_22-23-2_pahibf.mp4" type="video/mp4" />
-            </video>
-          </div>
           <div class="snap-img"></div>
+          <div class="snap-img img-3d-3"></div>
+          <div class="snap-img img-3d-4"></div>
+        </div>
+
+        <div class="snap-row">
+          <div class="snap-img img-3d-5"></div>
+          <div class="snap-img img-3d-6"></div>
           <div class="snap-img"></div>
+        </div>
+
+    
         </div>
       </div>
     </section>
-
-    <style>
-      .cinema-videos .video-item {
-        position: relative;
-        overflow: hidden;
-      }
-      .cinema-videos .video-item video {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        position: absolute;
-        top: 0;
-        left: 0;
-        display: block;
-      }
-    </style>
-
-    <script>
-      // Force autoplay for all videos when they become visible
-      document.addEventListener('DOMContentLoaded', function() {
-        const videos = document.querySelectorAll('.cinema-videos video');
-        
-        videos.forEach(video => {
-          // Try to play immediately
-          video.play().catch(e => console.log('Autoplay prevented:', e));
-          
-          // Also try on user interaction
-          document.addEventListener('click', () => {
-            video.play().catch(e => {});
-          }, { once: true });
-          
-          // Use Intersection Observer to play when visible
-          const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-              if (entry.isIntersecting) {
-                video.play().catch(e => {});
-              }
-            });
-          }, { threshold: 0.25 });
-          
-          observer.observe(video);
-        });
-      });
-    </script>
 
     <!-- footer -->
     <footer>
@@ -276,6 +223,7 @@
     <script type="module" src="/scripts/film.js"></script>
     <script type="module" src="/scripts/parallax.js"></script>
     <script type="module" src="/scripts/pixelated-text.js"></script>
+    <script type="module" src="/scripts/hover.js"></script>
     <script type="module" src="/scripts/transition.js"></script>
   </body>
 </html>

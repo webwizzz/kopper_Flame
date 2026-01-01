@@ -1,10 +1,10 @@
 import { slides } from "../data/slides.js";
-import { vertexShader, fragmentShader } from "../shaders.js";
+import { fragmentShader, vertexShader } from "../shaders.js";
 import { scrambleIn, scrambleOut, scrambleVisible } from "./scramble.js";
 
-import * as THREE from "three";
 import gsap from "gsap";
 import { SplitText } from "gsap/SplitText";
+import * as THREE from "three";
 
 gsap.registerPlugin(SplitText);
 gsap.config({ nullTargetWarn: false });
@@ -227,12 +227,30 @@ const initializeRenderer = async () => {
 
   const loader = new THREE.TextureLoader();
   for (const slide of slides) {
-    const texture = await new Promise((resolve) =>
-      loader.load(slide.image, resolve)
+    const texture = await new Promise((resolve, reject) =>
+      loader.load(
+        slide.image,
+        resolve,
+        undefined,
+        (error) => {
+          console.warn(`Failed to load texture: ${slide.image}`, error);
+          // Create a fallback 1x1 pixel texture
+          const canvas = document.createElement('canvas');
+          canvas.width = canvas.height = 1;
+          const ctx = canvas.getContext('2d');
+          ctx.fillStyle = '#1a1a1a';
+          ctx.fillRect(0, 0, 1, 1);
+          const fallbackTexture = new THREE.CanvasTexture(canvas);
+          resolve(fallbackTexture);
+        }
+      )
     );
     texture.minFilter = texture.magFilter = THREE.LinearFilter;
     texture.userData = {
-      size: new THREE.Vector2(texture.image.width, texture.image.height),
+      size: new THREE.Vector2(
+        texture.image?.width || 1920,
+        texture.image?.height || 1080
+      ),
     };
     slideTextures.push(texture);
   }

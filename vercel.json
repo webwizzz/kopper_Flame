@@ -14,6 +14,8 @@
     { "source": "/interiors", "destination": "/interiors.html" },
     { "source": "/photography", "destination": "/photography.html" },
     { "source": "/products", "destination": "/products.html" },
-    { "source": "/web-dev", "destination": "/web-dev.html" }
+    { "source": "/web-dev", "destination": "/web-dev.html" },
+    { "source": "/3d", "destination": "/3d.html" },
+    { "source": "/social-media", "destination": "/social-media.html" }
   ]
 }

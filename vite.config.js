@@ -19,6 +19,8 @@ export default defineConfig({
         photography: resolve(__dirname, "photography.html"),
         products: resolve(__dirname, "products.html"),
         webDev: resolve(__dirname, "web-dev.html"),
+        threeD: resolve(__dirname, "3d.html"),
+        socialMedia: resolve(__dirname, "social-media.html"),
       },
     },
     assetsInclude: [

@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social Media Management | Kopper Flame Studio</title>
+    <link rel="icon" href="/site-icon.png" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="author" content="Jatin&Swati" />
+
+    <link rel="stylesheet" href="/globals.css" />
+    <link rel="stylesheet" href="/css/transition.css" />
+    <link rel="stylesheet" href="/css/menu.css" />
+    <link rel="stylesheet" href="/css/home.css" />
+    <link rel="stylesheet" href="/css/film.css" />
+    <link rel="stylesheet" href="/css/pixelated-text.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
+
+    <style>
+      /* Services Grid Section */
+      .smm-services {
+        position: relative;
+        width: 100%;
+        padding: 8rem 0;
+        background-color: var(--tone-100);
+      }
+
+      .smm-services .container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 2rem;
+      }
+
+      .smm-services .section-header {
+        margin-bottom: 4rem;
+        text-align: center;
+      }
+
+      .smm-services .section-header h2 {
+        font-size: clamp(2rem, 5vw, 3.5rem);
+        color: #fff;
+        margin-bottom: 1.5rem;
+      }
+
+      .smm-services .section-header p {
+        max-width: 800px;
+        margin: 0 auto;
+        color: var(--tone-400);
+        line-height: 1.8;
+      }
+
+      .smm-services .services-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 2rem;
+      }
+
+      .smm-services .service-card {
+        position: relative;
+        padding: 2.5rem;
+        background-color: var(--tone-200);
+        border: 1px solid var(--tone-300);
+        transition: all 0.4s ease;
+      }
+
+      .smm-services .service-card:hover {
+        background-color: var(--tone-150);
+        border-color: var(--tone-400);
+        transform: translateY(-5px);
+      }
+
+      .smm-services .service-card .service-number {
+        font-size: 0.875rem;
+        color: var(--tone-400);
+        margin-bottom: 1rem;
+        font-family: var(--font-mono);
+      }
+
+      .smm-services .service-card h3 {
+        font-size: 1.5rem;
+        color: #fff;
+        margin-bottom: 1rem;
+      }
+
+      .smm-services .service-card p {
+        color: var(--tone-400);
+        line-height: 1.7;
+      }
+
+      /* Process Section */
+      .smm-process {
+        position: relative;
+        width: 100%;
+        padding: 8rem 0;
+        background-color: var(--tone-200);
+      }
+
+      .smm-process .container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 2rem;
+      }
+
+      .smm-process .section-header {
+        margin-bottom: 4rem;
+      }
+
+      .smm-process .section-header h2 {
+        font-size: clamp(2rem, 5vw, 3.5rem);
+        color: #fff;
+        margin-bottom: 1rem;
+      }
+
+      .smm-process .section-header p {
+        color: var(--tone-400);
+      }
+
+      .smm-process .process-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 3rem;
+      }
+
+      .smm-process .process-item {
+        position: relative;
+        padding-left: 2rem;
+        border-left: 1px solid var(--tone-300);
+      }
+
+      .smm-process .process-item .step-number {
+        font-size: 0.75rem;
+        color: var(--tone-400);
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        margin-bottom: 1rem;
+      }
+
+      .smm-process .process-item h3 {
+        font-size: 1.25rem;
+        color: #fff;
+        margin-bottom: 1rem;
+      }
+
+      .smm-process .process-item ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .smm-process .process-item ul li {
+        position: relative;
+        padding-left: 1.5rem;
+        color: var(--tone-400);
+        line-height: 1.8;
+        margin-bottom: 0.5rem;
+      }
+
+      .smm-process .process-item ul li::before {
+        content: "→";
+        position: absolute;
+        left: 0;
+        color: var(--tone-500);
+      }
+
+      /* USP Section */
+      .smm-usp {
+        position: relative;
+        width: 100%;
+        padding: 8rem 0;
+        background-color: var(--tone-100);
+      }
+
+      .smm-usp .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 2rem;
+        text-align: center;
+      }
+
+      .smm-usp .usp-badge {
+        display: inline-block;
+        padding: 0.5rem 1.5rem;
+        border: 1px solid var(--tone-400);
+        color: var(--tone-400);
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        margin-bottom: 2rem;
+      }
+
+      .smm-usp h2 {
+        font-size: clamp(2rem, 6vw, 4rem);
+        color: #fff;
+        margin-bottom: 2rem;
+        line-height: 1.2;
+      }
+
+      .smm-usp .usp-description {
+        max-width: 700px;
+        margin: 0 auto 3rem;
+        color: var(--tone-400);
+        line-height: 1.8;
+        font-size: 1.125rem;
+      }
+
+      .smm-usp .usp-cta {
+        display: inline-block;
+        padding: 1rem 2.5rem;
+        border: 1px solid #fff;
+        color: #fff;
+        text-decoration: none;
+        font-size: 0.875rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        transition: all 0.3s ease;
+      }
+
+      .smm-usp .usp-cta:hover {
+        background-color: #fff;
+        color: var(--tone-100);
+      }
+
+      /* FAQ Section */
+      .smm-faq {
+        position: relative;
+        width: 100%;
+        padding: 8rem 0;
+        background-color: var(--tone-200);
+      }
+
+      .smm-faq .container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 0 2rem;
+      }
+
+      .smm-faq .section-header {
+        margin-bottom: 4rem;
+        text-align: center;
+      }
+
+      .smm-faq .section-header h2 {
+        font-size: clamp(2rem, 5vw, 3rem);
+        color: #fff;
+      }
+
+      .smm-faq .faq-item {
+        border-bottom: 1px solid var(--tone-300);
+        padding: 1.5rem 0;
+      }
+
+      .smm-faq .faq-question {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        color: #fff;
+        font-size: 1.125rem;
+        transition: color 0.3s ease;
+      }
+
+      .smm-faq .faq-question:hover {
+        color: var(--tone-500);
+      }
+
+      .smm-faq .faq-question .icon {
+        font-size: 1.5rem;
+        transition: transform 0.3s ease;
+      }
+
+      .smm-faq .faq-item.active .faq-question .icon {
+        transform: rotate(45deg);
+      }
+
+      .smm-faq .faq-answer {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease, padding 0.4s ease;
+      }
+
+      .smm-faq .faq-item.active .faq-answer {
+        max-height: 300px;
+        padding-top: 1rem;
+      }
+
+      .smm-faq .faq-answer p {
+        color: var(--tone-400);
+        line-height: 1.8;
+      }
+
+      @media (max-width: 768px) {
+        .smm-services .services-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .smm-process .process-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- page transition -->
+    <div class="transition">
+      <div class="transition-overlay"></div>
+    </div>
+
+    <!-- menu -->
+    <nav>
+      <div class="container">
+        <div class="logo">
+          <div class="logo-container">
+            <a href="/"><span></span>Kopper Flame Studio</a>
+          </div>
+        </div>
+
+        <div class="menu-toggle-btn">
+          <div class="menu-toggle-btn-wrapper">
+            <p>Menu</p>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="nav-overlay">
+      <div class="nav-items">
+        <div class="nav-item active">
+          <a href="/">Index</a>
+        </div>
+        <div class="nav-item">
+          <a href="/work">Work</a>
+        </div>
+        <div class="nav-item">
+          <a href="/culture">Culture</a>
+        </div>
+        <div class="nav-item">
+          <a href="/contact">Contact</a>
+        </div>
+      </div>
+
+      <div class="nav-footer">
+        <div class="container">
+          <div class="nav-footer-item">
+            <a href="https://www.instagram.com/the_kopper_flame" target="_blank"
+              >Instagram</a
+            >
+            <a href="https://www.youtube.com/@kopperflamestudio" target="_blank"
+              >YouTube</a
+            >
+          </div>
+
+          <div class="nav-footer-item">
+            <a href="/contact">[ &nbsp;Drop a line &nbsp; ]</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- hero section -->
+    <section class="film-hero">
+      <div class="container">
+        <div class="film-hero-copy">
+          <div class="film-hero-title">
+            <div class="pixelated-text">
+              <h1>Social Media</h1>
+            </div>
+          </div>
+          <div class="film-hero-description">
+            <p>
+              At Kopper Flame Studio, our digital marketing service blends
+              creativity with strategy to help your brand grow online. From
+              social media management and performance marketing to content
+              strategy and SEO, we craft campaigns that connect, convert, and
+              leave an impact.
+            </p>
+
+            <p>[ &nbsp;Continue Inside&nbsp; ]</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- banner section -->
+    <section class="banner film-banner">
+      <div class="banner-img" data-parallax="true" data-parallax-speed="0.2">
+        <img src="https://res.cloudinary.com/dj0upsawo/image/upload/v1767279421/85_des_Fran%C3%A7ais_souhaitent_une_interdiction_des_r%C3%A9seaux_sociaux_chez_les_moins_de_14_ans_drbxko.jpg" alt="" />
+      </div>
+
+      <div class="banner-content">
+        <div class="container">
+          <div class="banner-header">
+            <h2>Connected by</h2>
+            <h2>Creativity</h2>
+          </div>
+
+          <div class="banner-copy">
+            <p>
+              Whether you're launching a product or building long-term brand
+              presence, we ensure every click, post, and story serves a
+              purpose—and delivers results. Every post is an opportunity to
+              strengthen your digital presence and build meaningful connections.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="smm-services">
+      <div class="container">
+        <div class="section-header">
+          <h2>What Services We Deliver?</h2>
+          <p>
+            Comprehensive social media management services designed to elevate
+            your brand's digital presence and drive meaningful engagement.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <div class="service-card">
+            <span class="service-number">01</span>
+            <h3>Content Planning</h3>
+            <p>
+              We build a strategic roadmap tailored to your brand's goals,
+              audience, and platforms—ensuring every piece of content has
+              purpose and direction.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <span class="service-number">02</span>
+            <h3>Content Creation</h3>
+            <p>
+              From design to copywriting to video—our team produces
+              high-quality, scroll-stopping content optimized for digital
+              platforms.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <span class="service-number">03</span>
+            <h3>Brand Analysis</h3>
+            <p>
+              We dive deep into your brand's tone, performance metrics, and
+              competitive landscape to align your marketing with market
+              expectations and trends.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <span class="service-number">04</span>
+            <h3>Content Execution</h3>
+            <p>
+              We don't just plan—we publish, manage, and schedule your content
+              across platforms with consistency and precision.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <span class="service-number">05</span>
+            <h3>Performance Reports</h3>
+            <p>
+              Detailed monthly reports that decode what's working, what's not,
+              and where to pivot—backed by metrics and insights.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <span class="service-number">06</span>
+            <h3>Content Calendars</h3>
+            <p>
+              Organized, visual timelines of your campaigns—planned ahead to
+              ensure seamless execution, festive alignment, and timely
+              storytelling.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="smm-process">
+      <div class="container">
+        <div class="section-header">
+          <h2>Our Process</h2>
+          <p>A systematic approach to social media excellence</p>
+        </div>
+
+        <div class="process-grid">
+          <div class="process-item">
+            <span class="step-number">Step 01</span>
+            <h3>Strategy & Planning</h3>
+            <ul>
+              <li>Define objectives: awareness, engagement, conversions</li>
+              <li>Research audience and platform suitability</li>
+              <li>Build a focused monthly content calendar</li>
+            </ul>
+          </div>
+
+          <div class="process-item">
+            <span class="step-number">Step 02</span>
+            <h3>Content Creation</h3>
+            <ul>
+              <li>Design engaging visuals (posts, Reels, videos)</li>
+              <li>Write compelling captions with effective hashtags</li>
+              <li>Ensure brand consistency in tone and aesthetics</li>
+            </ul>
+          </div>
+
+          <div class="process-item">
+            <span class="step-number">Step 03</span>
+            <h3>Scheduling & Publishing</h3>
+            <ul>
+              <li>Use tools like Meta Business Suite, Buffer, or Later</li>
+              <li>Schedule posts for peak engagement times</li>
+              <li>Ensure regular, consistent posting rhythm</li>
+            </ul>
+          </div>
+
+          <div class="process-item">
+            <span class="step-number">Step 04</span>
+            <h3>Community Engagement</h3>
+            <ul>
+              <li>Respond to comments, DMs, and tags</li>
+              <li>Interact with followers and share UGC</li>
+              <li>Drive engagement through polls, contests, and Q&As</li>
+            </ul>
+          </div>
+
+          <div class="process-item">
+            <span class="step-number">Step 05</span>
+            <h3>Monitoring & Analytics</h3>
+            <ul>
+              <li>Track brand mentions and competitor activity</li>
+              <li>Measure impressions, reach, engagement, and saves</li>
+              <li>Identify top-performing content and trends</li>
+            </ul>
+          </div>
+
+          <div class="process-item">
+            <span class="step-number">Step 06</span>
+            <h3>Optimization & Reporting</h3>
+            <ul>
+              <li>Refine strategy based on performance insights</li>
+              <li>Experiment with content formats and post timing</li>
+              <li>Share monthly reports with actionable insights</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- USP Section -->
+    <section class="smm-usp">
+      <div class="container">
+        <span class="usp-badge">Our USP</span>
+        <h2>Growth Guarantee</h2>
+        <p class="usp-description">
+          We commit to visible digital growth within 3 months—whether it's
+          reach, engagement, or followers. This is our promise, and your edge.
+        </p>
+        <a href="/contact" class="usp-cta scramble-hover"
+          >[ &nbsp;Get Started&nbsp; ]</a
+        >
+      </div>
+    </section>
+
+    <!-- Snapshots Section -->
+    <section class="film-snapshots">
+      <div class="container">
+       
+
+        <div class="snap-row">
+          <div class="snap-img img-sm-2"></div>
+          <div class="snap-img img-sm-1"></div>
+          <div class="snap-img img-sm-3"></div>
+        </div>
+
+        
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="smm-faq">
+      <div class="container">
+        <div class="section-header">
+          <h2>Frequently Asked Questions</h2>
+        </div>
+
+        <div class="faq-list">
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Will Digital Marketing bring leads?</span>
+              <span class="icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Yes—when done right, digital marketing drives high-quality
+                leads. It's all about targeting the right audience with the
+                right message at the right time.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>How will you measure success?</span>
+              <span class="icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                We track key performance indicators including reach, engagement
+                rate, follower growth, website traffic, lead generation, and
+                conversion rates. Monthly reports provide clear insights into
+                your ROI.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Is organic growth enough without ads?</span>
+              <span class="icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Organic growth builds long-term brand equity and trust, but paid
+                advertising accelerates reach and targets specific audiences. We
+                recommend a balanced approach based on your goals and budget.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Do I need to be active on every platform?</span>
+              <span class="icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                No—it's better to excel on platforms where your audience is most
+                active. We help identify the right platforms for your brand and
+                focus efforts where they'll have the greatest impact.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>How soon will I see results?</span>
+              <span class="icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Initial engagement improvements can be seen within weeks, but
+                meaningful growth typically shows within 2-3 months. We
+                guarantee visible progress within 3 months of consistent effort.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Can you handle everything end-to-end?</span>
+              <span class="icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Absolutely. From strategy and content creation to publishing,
+                community management, and reporting—we offer complete social
+                media management so you can focus on running your business.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <div class="footer-row form">
+        <div class="container">
+          <div class="footer-name">
+            <h3>Kopper</h3>
+            <h3>Flame</h3>
+            <h3>Studio</h3>
+          </div>
+
+          <div class="footer-form-copy">
+            <p>A living record of projects, people, and process.</p>
+          </div>
+
+          <div class="footer-input">
+            <input type="text" placeholder="Enter your email" />
+          </div>
+
+          <div class="footer-submit-btn">
+            <a href="/contact" class="scramble-hover"
+              >[ &nbsp;Start Exchange&nbsp; ]</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-row meta">
+        <div class="container">
+          <div class="footer-meta-row">
+            <div class="meta-info">
+              <p>Talk to Us, We're Listening</p>
+              <p>info@kopperflamestudio.com</p>
+            </div>
+
+            <div class="meta-info">
+              <a
+                href="https://www.youtube.com/@kopperflamestudio"
+                target="_blank"
+                class="scramble-hover"
+                >YouTube</a
+              >
+              <a
+                href="https://www.instagram.com/the_kopper_flame"
+                target="_blank"
+                class="scramble-hover"
+                >Instagram</a
+              >
+              <a
+                href="https://www.linkedin.com/"
+                target="_blank"
+                class="scramble-hover"
+                >LinkedIn</a
+              >
+            </div>
+
+            <div class="meta-info">
+              <a href="/culture" class="scramble-hover">Culture</a>
+            </div>
+
+            <div class="meta-info">
+              <a href="/work" class="scramble-hover">Projects</a>
+            </div>
+          </div>
+
+          <div class="footer-meta-row">
+            <p>All Rights Reserved</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/scripts/lenis-scroll.js"></script>
+    <script type="module" src="/scripts/menu.js"></script>
+    <script type="module" src="/scripts/film.js"></script>
+    <script type="module" src="/scripts/parallax.js"></script>
+    <script type="module" src="/scripts/pixelated-text.js"></script>
+    <script type="module" src="/scripts/hover.js"></script>
+    <script type="module" src="/scripts/transition.js"></script>
+
+    <script>
+      // FAQ Accordion
+      document.querySelectorAll(".faq-question").forEach((question) => {
+        question.addEventListener("click", () => {
+          const item = question.parentElement;
+          const isActive = item.classList.contains("active");
+
+          // Close all items
+          document.querySelectorAll(".faq-item").forEach((faq) => {
+            faq.classList.remove("active");
+          });
+
+          // Open clicked item if it wasn't active
+          if (!isActive) {
+            item.classList.add("active");
+          }
+        });
+      });
+    </script>
+    <script type="module" src="/scripts/transition.js"></script>
+  </body>
+</html>
