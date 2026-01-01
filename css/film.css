@@ -306,7 +306,31 @@
   background: url(https://res.cloudinary.com/dj0upsawo/image/upload/w_800,q_auto,f_jpg,so_0,c_limit/v1767268924/Screenshot_2026-01-01_at_5.30.46_PM_c22sio.png) no-repeat 50% 50%;
   background-size: contain;
 }
-
+/* food */
+.film-snapshots .img-fd-1 .mask {
+  background: url(https://res.cloudinary.com/dj0upsawo/image/upload/w_800,q_auto,f_jpg,so_0,c_limit/v1767274824/top-view-chicken-salad-with-vegetables-dark-table-diet-salad-health_cggk5v.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+.film-snapshots .img-fd-2 .mask {
+  background: url(https://res.cloudinary.com/dj0upsawo/image/upload/w_800,q_auto,f_jpg,so_0,c_limit/v1767274814/top-view-table-full-delicious-food-composition_hbnszb.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+.film-snapshots .img-fd-3 .mask {
+  background: url(https://res.cloudinary.com/dj0upsawo/image/upload/w_800,q_auto,f_jpg,so_0,c_limit/v1767274809/lavash-rolls-top-view-table_sqmgop.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+.film-snapshots .img-fd-4 .mask {
+  background: url(https://res.cloudinary.com/dj0upsawo/image/upload/w_800,q_auto,f_jpg,so_0,c_limit/v1767274800/pre-prepared-food-showcasing-ready-eat-delicious-meals-go_byjt1f.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+.film-snapshots .img-fd-5 .mask {
+  background: url(https://res.cloudinary.com/dj0upsawo/image/upload/w_800,q_auto,f_jpg,so_0,c_limit/v1767274747/mixed-salad-with-chopped-carrot_xpq0y1.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+.film-snapshots .img-fd-6 .mask {
+  background: url(https://res.cloudinary.com/dj0upsawo/image/upload/w_800,q_auto,f_jpg,so_0,c_limit/v1767274742/top-view-meat-sauce-soup-with-potatoes-greens-dark-floor_sflyxv.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
      
 
 @media (max-width: 1000px) {
